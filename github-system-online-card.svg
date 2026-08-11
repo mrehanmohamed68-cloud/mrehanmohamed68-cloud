@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 130" width="760" height="130">
+  <style>
+    .marquee { font-family: 'Courier New', Courier, monospace; font-weight: bold; letter-spacing: 4px; text-transform: uppercase; }
+    .body    { font-family: ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+  </style>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="scan" patternUnits="userSpaceOnUse" width="760" height="4">
+      <rect width="760" height="1" fill="white"/>
+    </pattern>
+    <clipPath id="mClip2">
+      <rect x="6" y="3" width="748" height="22"/>
+    </clipPath>
+  </defs>
+
+  <!-- ═══ FRAME ═══ -->
+  <rect x="1" y="1" width="758" height="128" rx="6" ry="6" fill="#0a0a0f"/>
+  <rect x="1" y="1" width="758" height="128" rx="6" ry="6" fill="none" stroke="#00e5ff" stroke-width="1.5" filter="url(#glow)" opacity="0.5"/>
+  <rect x="1" y="1" width="758" height="128" rx="6" ry="6" fill="none" stroke="#00e5ff" stroke-width="1.5"/>
+  <rect x="5" y="5" width="750" height="120" rx="4" ry="4" fill="none" stroke="#00e5ff" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- ═══ MARQUEE STRIP ═══ -->
+  <rect x="2" y="2" width="756" height="26" rx="5" fill="#00e5ff" opacity="0.06"/>
+  <line x1="6" y1="29" x2="754" y2="29" stroke="#00e5ff" stroke-width="0.5" opacity="0.25"/>
+  <g clip-path="url(#mClip2)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-760 0" dur="10s" repeatCount="indefinite"/>
+      <text x="0" y="21" class="marquee" fill="#00e5ff" font-size="13" opacity="0.85">♥ SYSTEM ONLINE ♥ SYSTEM ONLINE ♥ SYSTEM ONLINE ♥ SYSTEM ONLINE</text>
+      <text x="760" y="21" class="marquee" fill="#00e5ff" font-size="13" opacity="0.85">♥ SYSTEM ONLINE ♥ SYSTEM ONLINE ♥ SYSTEM ONLINE ♥ SYSTEM ONLINE ♥ SYSTEM ONLINE ♥ SYSTEM ONLINE ♥ SYSTEM ONLINE</text>
+    </g>
+  </g>
+
+  <!-- ═══ CONTENT ═══ -->
+  <text x="30" y="78" class="body" fill="#e0e0e0" font-size="17">
+    <tspan fill="#00e5ff">&gt;&gt;</tspan> Debugging life, one commit at a time
+    <animate attributeName="opacity" values="1;0.6;1" dur="1.6s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="700" y="100" font-size="18" text-anchor="end">
+    <tspan fill="#00e5ff">♥</tspan>
+    <tspan fill="#7c3aed" dx="6">♥</tspan>
+    <tspan fill="#38bdf8" dx="6">♥</tspan>
+  </text>
+
+  <!-- ═══ SCANLINES ═══ -->
+  <rect x="2" y="2" width="756" height="126" rx="5" fill="url(#scan)" opacity="0.035"/>
+</svg>
