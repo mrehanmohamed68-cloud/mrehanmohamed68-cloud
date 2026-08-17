@@ -12,3 +12,5 @@
 ![System Online](./github-system-online-card.svg)
 
 </p>
+
+[![Streak Stats](https://streak-stats.demolab.com/?user=mrehanmohamed68-cloud&theme=radical&background=0a0a0f&stroke=00e5ff&ring=00e5ff&fire=00e5ff&currStreakLabel=00e5ff)](https://git.io/streak-stats)
