@@ -1,44 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 900 240" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 900 220" preserveAspectRatio="xMidYMid meet">
   <defs>
     <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
       <stop offset="0%" stop-color="#0b0b0c" />
       <stop offset="100%" stop-color="#0a0a0f" />
     </linearGradient>
     <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
     </filter>
   </defs>
 
   <!-- Card background -->
-  <rect x="12" y="10" width="876" height="220" rx="10" ry="10" fill="url(#bg)" filter="url(#soft-shadow)" />
+  <rect x="12" y="10" width="876" height="200" rx="10" ry="10" fill="url(#bg)" filter="url(#soft-shadow)" />
 
   <!-- Left column -->
-  <g transform="translate(40,52)">
-    <text x="0" y="0" fill="#ff4da6" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="56" font-weight="800">22</text>
-    <text x="0" y="64" fill="#ff4da6" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="16">Total Contributions</text>
-    <text x="0" y="88" fill="#00e5ff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13">Jun 17 - Present</text>
+  <g transform="translate(44,46)">
+    <text x="0" y="0" fill="#ff4da6" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="52" font-weight="700">22</text>
+    <text x="0" y="62" fill="#ff4da6" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="15">Total Contributions</text>
+    <text x="0" y="86" fill="#00e5ff" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="13">Jun 17 - Present</text>
   </g>
 
-  <!-- Right column -->
-  <g transform="translate(720,52)">
-    <text x="0" y="0" fill="#ff4da6" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="48" font-weight="800" text-anchor="end">2</text>
-    <text x="0" y="64" fill="#ff4da6" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="16" text-anchor="end">Longest Streak</text>
-    <text x="0" y="88" fill="#00e5ff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13" text-anchor="end">Aug 11 - Aug 12</text>
-  </g>
+  <!-- Left divider -->
+  <rect x="300" y="28" width="1" height="164" fill="#122026" />
 
   <!-- Center column -->
-  <g transform="translate(250,24)">
-    <!-- Divider lines -->
-    <rect x="360" y="18" width="2" height="184" fill="#122026" />
-    <rect x="-12" y="18" width="2" height="184" fill="#122026" />
-
+  <g transform="translate(320,12)">
     <!-- Ring -->
-    <circle cx="220" cy="110" r="52" fill="none" stroke="#00e5ff" stroke-width="10" />
+    <circle cx="230" cy="100" r="54" fill="none" stroke="#00e5ff" stroke-width="10" />
+    <!-- Flame dot -->
+    <circle cx="260" cy="70" r="10" fill="#00e5ff" />
     <!-- Inner number -->
-    <text x="220" y="120" text-anchor="middle" fill="#ffd966" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="36" font-weight="700">1</text>
+    <text x="230" y="110" text-anchor="middle" fill="#ffd966" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="36" font-weight="700">1</text>
     <!-- Label -->
-    <text x="220" y="162" text-anchor="middle" fill="#00e5ff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="800">Current Streak</text>
-    <text x="220" y="186" text-anchor="middle" fill="#cfd8dc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13">Aug 17</text>
+    <text x="230" y="150" text-anchor="middle" fill="#00e5ff" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="20" font-weight="700">Current Streak</text>
+    <text x="230" y="174" text-anchor="middle" fill="#cfd8dc" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="13">Aug 17</text>
+  </g>
+
+  <!-- Right divider -->
+  <rect x="640" y="28" width="1" height="164" fill="#122026" />
+
+  <!-- Right column -->
+  <g transform="translate(660,46)">
+    <text x="0" y="0" fill="#ff4da6" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="48" font-weight="700">2</text>
+    <text x="0" y="62" fill="#ff4da6" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="15">Longest Streak</text>
+    <text x="0" y="86" fill="#00e5ff" font-family="Inter, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="13">Aug 11 - Aug 12</text>
   </g>
 
 </svg>
