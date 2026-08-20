@@ -7,7 +7,7 @@
 
 ![Top Langs](https://github-readme-stats-six-theta-56.vercel.app/api/top-langs/?username=mrehanmohamed68-cloud&layout=compact&theme=radical&bg_color=0a0a0f&title_color=00e5ff&text_color=e0e0e0&border_color=00e5ff)
 
-[![Streak Stats](https://streak-stats.demolab.com/?user=mrehanmohamed68-cloud&theme=radical&background=0a0a0f&stroke=00e5ff&ring=00e5ff&fire=00e5ff&currStreakLabel=00e5ff)](https://git.io/streak-stats)
+![Streak Stats](./github-streak.svg)
 
 ![System Online](./github-system-online-card.svg)
 
